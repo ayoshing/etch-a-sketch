@@ -4,6 +4,7 @@ var gridSize = '';
 
 function calcGridSize(gridNum) {
   gridSize = (600 / (Number(gridNum))) + 'px';
+  canvas.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`;
   for (i = 0; i < (Math.pow(gridNum, 2)); i++) {
     createGrid();
   }

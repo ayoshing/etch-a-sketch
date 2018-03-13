@@ -38,7 +38,6 @@ button:hover {
   text-align: center;
   margin: 30px auto;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
   width: 600px;
   height: 600px;
 }
