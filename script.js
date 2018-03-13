@@ -2,7 +2,7 @@ const canvas = document.querySelector('.canvas');
 const reset = document.getElementById('reset');
 var gridSize = '';
 
-function calcGridSize(gridNum) {
+function createCanvas(gridNum) {
   gridSize = (600 / (Number(gridNum))) + 'px';
   canvas.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`;
   for (i = 0; i < (Math.pow(gridNum, 2)); i++) {
@@ -16,6 +16,8 @@ function createGrid() {
   div.style.height = gridSize;
   div.style.background = '#dbdbdb';
   canvas.appendChild(div);
+  div.addEventListener('mouseover', function () {
+    div.style.background = 'black';});
 }
 
-calcGridSize(prompt('Enter canvas size:', '16'));
+createCanvas(prompt('Enter canvas size:', '16'));
