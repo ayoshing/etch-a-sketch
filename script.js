@@ -4,7 +4,9 @@ var gridSize = '';
 
 function calcGridSize(gridNum) {
   gridSize = (600 / (Number(gridNum))) + 'px';
-  createGrid();
+  for (i = 0; i < (Math.pow(gridNum, 2)); i++) {
+    createGrid();
+  }
 }
 
 function createGrid() {

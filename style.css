@@ -36,7 +36,7 @@ button:hover {
 
 .canvas {
   text-align: center;
-  margin: 70px auto;
+  margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   width: 600px;
